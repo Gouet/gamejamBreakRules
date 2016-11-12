@@ -15,18 +15,21 @@
    id="svg3336"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="stick_idle.svg">
+   sodipodi:docname="stick_idle.svg"
+   inkscape:export-filename="/home/work/work/projects/gamejamBreakRules/assets/stickman/stick_idle.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3338" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
+     bordercolor="#ffffff"
+     borderopacity="0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="319.56937"
+     inkscape:cx="584.04522"
      inkscape:cy="462.80963"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -55,7 +58,7 @@
      transform="translate(0,-308.26772)">
     <g
        id="g4294"
-       transform="translate(251.55837,-0.85006516)">
+       transform="translate(246.24813,0.86776172)">
       <g
          transform="translate(0,5)"
          id="g4216">
@@ -98,7 +101,7 @@
     </g>
     <g
        id="g4303"
-       transform="translate(-192.14286,-0.57851106)">
+       transform="translate(-192.14286,1.1393158)">
       <g
          id="g4216-5"
          transform="translate(230.28497,4.7284459)">
@@ -141,7 +144,7 @@
     </g>
     <g
        id="g4312"
-       transform="translate(10,-0.57850616)">
+       transform="translate(-0.62042236,1.1393207)">
       <g
          id="g4216-5-7"
          transform="translate(458.85639,4.728441)">
@@ -179,6 +182,49 @@
            style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.72354221;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m 191.71124,599.90375 c 66.33338,105.68563 53.73004,130.88221 53.73004,130.88221"
            id="path4199-7-2-6"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g4294-2"
+       transform="translate(666.68949,0.86776172)">
+      <g
+         transform="translate(0,5)"
+         id="g4216-9">
+        <ellipse
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="path3344-31"
+           cx="189.64285"
+           cy="418.43362"
+           rx="55.357143"
+           ry="53.214287" />
+        <rect
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4146-9"
+           width="7.1428576"
+           height="132.85715"
+           x="186.42857"
+           y="472.36221"
+           ry="0.41212893" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 189.06384,495.4374 C 95.896639,538.9331 126.66746,599.26583 126.66746,599.26583"
+           id="path4163-4"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 192.40351,496.22338 c 94.37085,41.14774 63.2025,98.22363 63.2025,98.22363"
+           id="path4163-6-7"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 191.42857,598.07649 C 120,705.93363 133.57143,731.64792 133.57143,731.64792"
+           id="path4199-8"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.72354221;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 191.71124,599.90375 c 66.33338,105.68563 53.73004,130.88221 53.73004,130.88221"
+           id="path4199-7-4"
            inkscape:connector-curvature="0" />
       </g>
     </g>
