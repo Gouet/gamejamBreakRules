@@ -28,8 +28,8 @@
      borderopacity="0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="327.59135"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="560.42074"
      inkscape:cy="511.98091"
      inkscape:document-units="px"
      inkscape:current-layer="g4216-5"
@@ -64,7 +64,7 @@
          transform="translate(230.28497,4.7284459)">
         <g
            id="g4994"
-           transform="matrix(0.99570352,0.09259862,-0.09259862,0.99570352,-39.200161,-14.109614)">
+           transform="matrix(-0.99570352,0.09259862,0.09259862,0.99570352,1038.1268,-14.109652)">
           <ellipse
              ry="53.214287"
              rx="55.357143"
@@ -102,10 +102,10 @@
              style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.72354221;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         </g>
         <g
-           transform="translate(254.14766,-2.5019203)"
+           transform="matrix(-1,0,0,1,744.77895,-2.5019582)"
            id="g4994-2" />
         <g
-           transform="matrix(0.93713192,0.34897531,-0.34897531,0.93713192,652.02853,-36.443497)"
+           transform="matrix(-0.93713192,0.34897531,0.34897531,0.93713192,346.89805,-36.443534)"
            id="g4994-0">
           <ellipse
              ry="53.214287"
@@ -145,7 +145,7 @@
         </g>
         <g
            id="g5101"
-           transform="translate(-76.00582,4.9930769)">
+           transform="matrix(-1,0,0,1,1074.9324,4.9930394)">
           <g
              id="g4994-0-2"
              transform="matrix(0.9705595,0.24086149,-0.24086149,0.9705595,393.66548,-27.639829)">
@@ -188,7 +188,7 @@
         </g>
         <g
            id="g5101-5"
-           transform="translate(441.55092,4.9930769)">
+           transform="matrix(-1,0,0,1,557.37569,4.9930394)">
           <g
              id="g4994-0-2-0"
              transform="matrix(0.9705595,0.24086149,-0.24086149,0.9705595,393.66548,-27.639829)">
