@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 52642a0e1d09fdd458ed17ccb1025f5c
-timeCreated: 1478958843
+timeCreated: 1478962872
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,7 @@ TextureImporter:
     21300002: stick_run_left_1
     21300004: stick_run_left_2
     21300006: stick_run_left_3
+    21300008: stick_run_left_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,9 +62,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
-        width: 239
-        height: 357
+        y: 6
+        width: 245
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -73,10 +74,10 @@ TextureImporter:
       name: stick_run_left_1
       rect:
         serializedVersion: 2
-        x: 257
-        y: 1
-        width: 242
-        height: 372
+        x: 299
+        y: 4
+        width: 226
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -86,10 +87,10 @@ TextureImporter:
       name: stick_run_left_2
       rect:
         serializedVersion: 2
-        x: 517
-        y: 8
-        width: 240
-        height: 357
+        x: 589
+        y: 2
+        width: 226
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -99,10 +100,23 @@ TextureImporter:
       name: stick_run_left_3
       rect:
         serializedVersion: 2
-        x: 792
+        x: 879
         y: 0
-        width: 207
-        height: 374
+        width: 226
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: stick_run_left_4
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 0
+        width: 226
+        height: 329
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
