@@ -12,9 +12,9 @@ public class PlayerAnimation : MonoBehaviour {
 
 	public float forceJump = 2;
 	public float forceRun = 0.5f;
+	public float maxSpeed = 10.0f;
 
 	void OnCollisionEnter2D(Collision2D coll) {
-		Debug.Log ("Test");
 		if (coll.gameObject.tag == "DeathObject" && !anim.GetBool("IsDead")) {
 			anim.SetBool("IsDead", true);
 			anim.SetTrigger ("Dies");
@@ -54,5 +54,14 @@ public class PlayerAnimation : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
+		if (rigid.velocity.x > maxSpeed) {
+			force = rigid.velocity;
+			force.x = maxSpeed;
+			rigid.velocity = force;
+		} else if (rigid.velocity.x < -maxSpeed) {
+			force = rigid.velocity;
+			force.x = -maxSpeed;
+			rigid.velocity = force;
+		}
 	}
 }
