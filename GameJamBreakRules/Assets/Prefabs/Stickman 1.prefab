@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012864017550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.14, y: -0.058, z: 0}
+  m_LocalPosition: {x: -6.14, y: -0.058, z: 800}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -210,7 +210,7 @@ MonoBehaviour:
   facingRight: 1
   jump: 0
   moveForce: 365
-  jumpForce: 1000
+  jumpForce: 1100
   groundCheck: {fileID: 4000012604682082}
   maxSpeed: 10
   deathSounds:

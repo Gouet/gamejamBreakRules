@@ -157,7 +157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Die potato
+  m_Text: Highscores
 --- !u!222 &75337902
 CanvasRenderer:
   m_ObjectHideFlags: 0
