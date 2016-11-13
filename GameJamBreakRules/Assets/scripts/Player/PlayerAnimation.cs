@@ -2,6 +2,8 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Text.RegularExpressions;
+using System;
+using System.Collections.Generic;
 
 [RequireComponent (typeof (Animator))]
 [RequireComponent (typeof (Rigidbody2D))]
@@ -22,25 +24,24 @@ public class PlayerAnimation : MonoBehaviour {
 	public AudioClip[] deathSounds;
 
 	private void editScore(float chrono) {
-		if (chrono <= 0)
+		if (chrono <= 0 || isDead)
 			return;
+        Debug.Log("Editing score");
 		string levelname = "level_" + Regex.Match (SceneManager.GetActiveScene ().name, @"-?\d+").Value;
-		float score1 = PlayerPrefs.GetFloat (levelname + "_" + 1);
-		float score2 = PlayerPrefs.GetFloat (levelname + "_" + 2);
-		float score3 = PlayerPrefs.GetFloat (levelname + "_" + 3);
-		score3 = score3 > 0 ? score3 : (score2 > 0 ? chrono : 0);
-		score2 = score2 > 0 ? score2 : (score1 > 0 ? chrono : 0);
-		score1 = score1 > 0 ? score1 : chrono;
-		if (score1 >= chrono) {
-			PlayerPrefs.SetFloat (levelname + "_" + 3, score2);
-			PlayerPrefs.SetFloat (levelname + "_" + 2, score1);
-			PlayerPrefs.SetFloat (levelname + "_" + 1, chrono);
-		} else if (score2 >= chrono) {
-			PlayerPrefs.SetFloat (levelname + "_" + 3, score2);
-			PlayerPrefs.SetFloat (levelname + "_" + 2, chrono);
-		} else if (score3 >= chrono) {
-			PlayerPrefs.SetFloat (levelname + "_" + 3, chrono);
-		}
+
+        List<float> scores = new List<float>();
+
+        scores.Add(PlayerPrefs.GetFloat(levelname + "_" + 1));
+        scores.Add(PlayerPrefs.GetFloat(levelname + "_" + 2));
+        scores.Add(PlayerPrefs.GetFloat(levelname + "_" + 3));
+        scores.Add(chrono);
+
+        scores.Sort();
+
+        PlayerPrefs.SetFloat(levelname + "_" + 3, scores[1]);
+        PlayerPrefs.SetFloat(levelname + "_" + 2, scores[2]);
+        PlayerPrefs.SetFloat(levelname + "_" + 1, scores[3]);
+        
 		for (int i = 1; i <= 3; ++i)
 			Debug.Log ("Time " + i + " on " + levelname + ": " + PlayerPrefs.GetFloat(levelname + "_" + i));
 	}
@@ -66,8 +67,10 @@ public class PlayerAnimation : MonoBehaviour {
 	}
 
 	void Update () {
-		if (isDead && anim.GetCurrentAnimatorStateInfo (0).IsName ("Stickman_dab"))
-			SceneManager.LoadScene("Levels/level_" + (int.Parse(Regex.Match(SceneManager.GetActiveScene().name, @"-?\d+").Value) + 1));
+        if (isDead && anim.GetCurrentAnimatorStateInfo(0).IsName("Stickman_dab"))
+        {
+            SceneManager.LoadScene("Levels/level_" + (int.Parse(Regex.Match(SceneManager.GetActiveScene().name, @"-?\d+").Value) + 1));
+        }
 		if (!anim.GetBool ("IsDead")) {
 			if (Input.GetButton ("Jump") && !jumping) {
 				anim.SetTrigger ("Jump");
@@ -92,6 +95,8 @@ public class PlayerAnimation : MonoBehaviour {
 			if (jumping && rigid.velocity.y == 0)
 				jumping = false;
 		}
+        if (Input.GetButton("Cancel"))
+            SceneManager.LoadScene("Menu");
 		if (!isDead && timer.GetComponent<timer> ().getTimer () <= 0.0f)
 			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 	}

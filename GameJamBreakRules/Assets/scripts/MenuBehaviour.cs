@@ -26,7 +26,9 @@ public class MenuBehaviour : MonoBehaviour {
 	public void onClickReset()
 	{
 		PlayerPrefs.DeleteAll();
-		if (SceneManager.GetActiveScene ().name == "Highscores")
-			GameObject.Find ("Main Camera").GetComponent<HighscoreTiles> ().initHighscore ();
+        HighscoreTiles hgh = gameObject.GetComponent<HighscoreTiles>();
+
+        if (hgh != null)
+            hgh.initHighscore();
 	}
 }

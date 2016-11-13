@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.IO;
+using System;
 
 public class HighscoreTiles : MonoBehaviour {
 
@@ -20,7 +21,9 @@ public class HighscoreTiles : MonoBehaviour {
 			txt += "Niveau " + i.ToString() + ": ";
 			for (int j = 1; j <= 3; ++j)
 			{
-				txt += PlayerPrefs.GetFloat(baselvl + i.ToString() + "_" + j.ToString()).ToString();
+                float time = PlayerPrefs.GetFloat(baselvl + i.ToString() + "_" + j.ToString());
+                
+                txt += string.Format("{0:0}:{1:00}", Math.Floor(time / 60), Math.Floor(time) % 60);
 				if (j != 3)
 					txt += " - ";
 			}
