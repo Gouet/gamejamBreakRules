@@ -18,8 +18,15 @@ public class MenuBehaviour : MonoBehaviour {
         Application.Quit();
     }
 
-    public void onClickHome()
-    {
-        SceneManager.LoadScene("scenes/Menu");
-    }
+	public void onClickHome()
+	{
+		SceneManager.LoadScene("scenes/Menu");
+	}
+
+	public void onClickReset()
+	{
+		PlayerPrefs.DeleteAll();
+		if (SceneManager.GetActiveScene ().name == "Highscores")
+			GameObject.Find ("Main Camera").GetComponent<HighscoreTiles> ().initHighscore ();
+	}
 }
