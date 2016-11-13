@@ -4,6 +4,7 @@ using System.Collections;
 using System.Text.RegularExpressions;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 [RequireComponent (typeof (Animator))]
 [RequireComponent (typeof (Rigidbody2D))]
@@ -18,8 +19,16 @@ public class PlayerAnimation : MonoBehaviour {
 	private AudioSource	audioSrc;
 	private GameObject timer;
 
-	public float forceJump = 2;
-	public float forceRun = 0.5f;
+    [HideInInspector]
+    public bool facingRight = false;
+    [HideInInspector]
+    public bool jump = false;
+    public float moveForce = 365f;
+    public float jumpForce = 1000f;
+    public Transform groundCheck;
+
+
+    private bool grounded = false;
 	public float maxSpeed = 10.0f;
 	public AudioClip[] deathSounds;
 
@@ -55,9 +64,24 @@ public class PlayerAnimation : MonoBehaviour {
 			if (deathSounds.Length > 1) {
 				audioSrc.clip = deathSounds [coll.gameObject.name == "toaster" ? 1 : 0];
 				audioSrc.Play ();
+                StartCoroutine(calllvl(anim.GetCurrentAnimatorClipInfo(0).Length));
 			}
 		}
 	}
+
+    IEnumerator calllvl(int length)
+    {
+        yield return new WaitForSeconds(length);
+
+        string lvl = "Levels/level_" + (int.Parse(Regex.Match(SceneManager.GetActiveScene().name, @"-?\d+").Value) + 1);
+
+        Debug.Log(lvl);
+        Debug.Log(Application.dataPath + "/" + lvl + ".unity");
+        if (File.Exists(Application.dataPath + "/" + lvl + ".unity"))
+            SceneManager.LoadScene(lvl);
+        else
+            SceneManager.LoadScene("Highscores");
+    }
 
 	void Start () {
 		anim = this.GetComponent<Animator> ();
@@ -67,34 +91,10 @@ public class PlayerAnimation : MonoBehaviour {
 	}
 
 	void Update () {
-        if (isDead && anim.GetCurrentAnimatorStateInfo(0).IsName("Stickman_dab"))
-        {
-            SceneManager.LoadScene("Levels/level_" + (int.Parse(Regex.Match(SceneManager.GetActiveScene().name, @"-?\d+").Value) + 1));
-        }
-		if (!anim.GetBool ("IsDead")) {
-			if (Input.GetButton ("Jump") && !jumping) {
-				anim.SetTrigger ("Jump");
-				force = (transform.up * forceJump) / Time.fixedDeltaTime;
-				rigid.AddForce (force);
-				jumping = true;
-			}
-			else
-				anim.ResetTrigger ("Jump");
+        grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
-			if (Input.GetButton ("Horizontal")) {
-				Vector3 vec = this.transform.localScale;
-				if ((Input.GetAxis ("Horizontal") > 0 && vec.x > 0) || (Input.GetAxis ("Horizontal") < 0 && vec.x < 0))
-					vec.x *= -1;
-				this.transform.localScale = vec;
-				anim.SetBool ("IsRunning", true);
-				force = (transform.right * forceRun * vec.x * -1) / Time.deltaTime;
-				rigid.AddForce (force);
-			} else
-				anim.SetBool ("IsRunning", false);
-
-			if (jumping && rigid.velocity.y == 0)
-				jumping = false;
-		}
+        if (Input.GetButtonDown("Jump") && grounded)
+            jump = true;
         if (Input.GetButton("Cancel"))
             SceneManager.LoadScene("Menu");
 		if (!isDead && timer.GetComponent<timer> ().getTimer () <= 0.0f)
@@ -102,14 +102,39 @@ public class PlayerAnimation : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		if (rigid.velocity.x > maxSpeed) {
-			force = rigid.velocity;
-			force.x = maxSpeed;
-			rigid.velocity = force;
-		} else if (rigid.velocity.x < -maxSpeed) {
-			force = rigid.velocity;
-			force.x = -maxSpeed;
-			rigid.velocity = force;
-		}
+        if (isDead)
+            return;
+
+        float h = Input.GetAxis("Horizontal");
+
+        //anim.SetFloat("Speed", Mathf.Abs(h));
+
+        if (h * rigid.velocity.x < maxSpeed)
+            rigid.AddForce(Vector2.right * h * moveForce);
+
+        if (Mathf.Abs(rigid.velocity.x) > maxSpeed)
+            rigid.velocity = new Vector2(Mathf.Sign(rigid.velocity.x) * maxSpeed, rigid.velocity.y);
+
+        if (h > 0 && facingRight)
+            Flip();
+        else if (h < 0 && !facingRight)
+            Flip();
+
+        anim.SetBool("IsRunning", h != 0);
+
+        if (jump)
+        {
+            anim.SetTrigger("Jump");
+            rigid.AddForce(new Vector2(0f, jumpForce));
+            jump = false;
+        }
 	}
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
 }

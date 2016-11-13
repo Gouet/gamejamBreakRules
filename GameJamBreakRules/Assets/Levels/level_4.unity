@@ -499,8 +499,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce3c7410e91eb4419ea5c9e3730a4b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceJump: 4
-  forceRun: 0.3
+  facingRight: 0
+  jump: 0
+  moveForce: 365
+  jumpForce: 1000
+  groundCheck: {fileID: 0}
   maxSpeed: 10
   deathSounds:
   - {fileID: 8300000, guid: 52823de4449189942900649108c31e8a, type: 3}
@@ -1374,7 +1377,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1385,7 +1388,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 22.05563
+  orthographic size: 30.391817
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
