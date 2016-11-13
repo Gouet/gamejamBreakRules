@@ -10,6 +10,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/Highscores.unity
   - enabled: 1
+    path: Assets/scenes/Credits.unity
+  - enabled: 1
     path: Assets/Levels/level_1.unity
   - enabled: 1
     path: Assets/Levels/level_2.unity

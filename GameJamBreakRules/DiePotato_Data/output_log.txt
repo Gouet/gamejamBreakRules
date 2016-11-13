@@ -1,0 +1,306 @@
+Mono path[0] = 'G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/DiePotato_Data/Managed'
+Mono path[1] = 'G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/DiePotato_Data/Mono'
+Mono config path = 'G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/DiePotato_Data/Mono/etc'
+PlayerConnection initialized from G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/DiePotato_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55322
+Multi-casting "[IP] 192.168.141.1 [Port] 55322 [Flags] 2 [Guid] 1245826622 [EditorId] 1894967553 [Version] 1048832 [Id] WindowsPlayer(gaspar-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.141.1:55322]
+Initialize engine version: 5.4.2f2 (b7e030c65c9b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1068 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.128 seconds
+Platform assembly: G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\DiePotato_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.430705 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 14.091172 ms
+System memory in use before: 90.8 MB.
+System memory in use after: 42.4 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 249.
+Total: 8.430223 ms (FindLiveObjects: 0.034212 ms CreateObjectMapping: 0.025088 ms MarkObjects: 0.254689 ms  DeleteObjects: 8.115092 ms)
+
+Editing score
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:38)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 38)
+
+Time 1 on level_1: 8.641757
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 2 on level_1: 8.595138
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 3 on level_1: 8.445076
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.161322 ms
+System memory in use before: 42.2 MB.
+System memory in use after: 42.2 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 260.
+Total: 0.572481 ms (FindLiveObjects: 0.042574 ms CreateObjectMapping: 0.031931 ms MarkObjects: 0.483529 ms  DeleteObjects: 0.011404 ms)
+
+Editing score
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:38)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 38)
+
+Time 1 on level_2: 16.95454
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 2 on level_2: 9.025679
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 3 on level_2: 8.893325
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.327046 ms
+System memory in use before: 42.3 MB.
+System memory in use after: 42.3 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 0.578943 ms (FindLiveObjects: 0.045235 ms CreateObjectMapping: 0.032691 ms MarkObjects: 0.474026 ms  DeleteObjects: 0.022808 ms)
+
+Editing score
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:38)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 38)
+
+Time 1 on level_3: 19.71516
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 2 on level_3: 12.20204
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 3 on level_3: 11.59782
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.513692 ms
+System memory in use before: 42.3 MB.
+System memory in use after: 42.3 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 341.
+Total: 0.867084 ms (FindLiveObjects: 0.051698 ms CreateObjectMapping: 0.055499 ms MarkObjects: 0.579703 ms  DeleteObjects: 0.176762 ms)
+
+Editing score
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:38)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 38)
+
+Time 1 on level_4: 79.79548
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 2 on level_4: 79.27168
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 3 on level_4: 79.25755
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.596181 ms
+System memory in use before: 42.3 MB.
+System memory in use after: 42.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 400.
+Total: 0.800941 ms (FindLiveObjects: 0.058920 ms CreateObjectMapping: 0.047136 ms MarkObjects: 0.514320 ms  DeleteObjects: 0.178282 ms)
+
+Editing score
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:38)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 38)
+
+Time 1 on level_5: 89.55334
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 2 on level_5: 89.54942
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Time 3 on level_5: 89.54383
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerAnimation:editScore(Single) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:55)
+PlayerAnimation:OnCollisionEnter2D(Collision2D) (at G:\gaspar\Documents\epitech\unity\gamejamBreakRules\GameJamBreakRules\Assets\scripts\Player\PlayerAnimation.cs:60)
+ 
+(Filename: G:/gaspar/Documents/epitech/unity/gamejamBreakRules/GameJamBreakRules/Assets/scripts/Player/PlayerAnimation.cs Line: 55)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.175373 ms
+System memory in use before: 90.6 MB.
+System memory in use after: 64.7 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 3.932482 ms (FindLiveObjects: 0.025088 ms CreateObjectMapping: 0.019766 ms MarkObjects: 0.350103 ms  DeleteObjects: 3.536002 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.484450 ms
+System memory in use before: 64.8 MB.
+System memory in use after: 64.8 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 243.
+Total: 0.967059 ms (FindLiveObjects: 0.042194 ms CreateObjectMapping: 0.032691 ms MarkObjects: 0.862523 ms  DeleteObjects: 0.027369 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.319823 ms
+System memory in use before: 64.8 MB.
+System memory in use after: 64.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 242.
+Total: 0.904337 ms (FindLiveObjects: 0.046376 ms CreateObjectMapping: 0.031931 ms MarkObjects: 0.525344 ms  DeleteObjects: 0.297264 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.316402 ms
+System memory in use before: 64.8 MB.
+System memory in use after: 64.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 240.
+Total: 0.875447 ms (FindLiveObjects: 0.035732 ms CreateObjectMapping: 0.025849 ms MarkObjects: 0.522683 ms  DeleteObjects: 0.288901 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 22b4 -> priority: 1 

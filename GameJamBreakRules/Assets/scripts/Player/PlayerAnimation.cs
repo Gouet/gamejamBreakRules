@@ -74,10 +74,8 @@ public class PlayerAnimation : MonoBehaviour {
         yield return new WaitForSeconds(length);
 
         string lvl = "Levels/level_" + (int.Parse(Regex.Match(SceneManager.GetActiveScene().name, @"-?\d+").Value) + 1);
-
-        Debug.Log(lvl);
-        Debug.Log(Application.dataPath + "/" + lvl + ".unity");
-        if (File.Exists(Application.dataPath + "/" + lvl + ".unity"))
+        
+        if (Application.CanStreamedLevelBeLoaded(lvl))
             SceneManager.LoadScene(lvl);
         else
             SceneManager.LoadScene("Highscores");

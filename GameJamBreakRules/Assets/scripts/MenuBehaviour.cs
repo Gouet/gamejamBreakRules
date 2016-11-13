@@ -31,4 +31,9 @@ public class MenuBehaviour : MonoBehaviour {
         if (hgh != null)
             hgh.initHighscore();
 	}
+
+    public void onClickCredit()
+    {
+        SceneManager.LoadScene("scenes/Credits");
+    }
 }
